@@ -1,0 +1,8 @@
+body-parser@1.19.0: Viet Api, lay cac thong so client gui len server, toi gian duoc cac thong so
+dotenv@8.2.0: Dung cau lenh process.env.[param] lay cac thong so duoc khai bao trong bien moi truong
+ejs@3.1.5: view engine, chay man hinh tren server
+express@4.17.1: framework
+npm install --save-dev @babel/core@7.12.10: -> Trinh dich cua nodejs
+@babel/preset-env@7.12.10: -> Trinh dich cua nodejs
+@babel/node@7.12.10: -> Trinh dich cua nodejs
+nodemon@2.0.7: live server
