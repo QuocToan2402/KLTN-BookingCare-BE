@@ -10,6 +10,7 @@ let app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 viewEngine(app);
+//Khai bao cho express biet tat ca cac link dung trong initWebRoutes
 initWebRoutes(app);
 
 //port == undefined => port = 4000

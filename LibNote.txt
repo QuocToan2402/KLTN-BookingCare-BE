@@ -6,3 +6,4 @@ npm install --save-dev @babel/core@7.12.10: -> Trinh dich cua nodejs
 @babel/preset-env@7.12.10: -> Trinh dich cua nodejs
 @babel/node@7.12.10: -> Trinh dich cua nodejs
 nodemon@2.0.7: live server
+sequelize-cli@6.2.0: ORM
