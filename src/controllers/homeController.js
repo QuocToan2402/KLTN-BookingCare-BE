@@ -12,6 +12,18 @@ let getHomePage = async (req, res) => {
 	}
 };
 
+let getCRUD = async (req, res) => {
+	try {
+		let data = await db.User.findAll();
+		return res.render('crud.ejs', {
+			data: JSON.stringify(data),
+		});
+	} catch (e) {
+		console.log(e);
+	}
+};
+
 module.exports = {
 	getHomePage: getHomePage,
+	getCRUD: getCRUD,
 };

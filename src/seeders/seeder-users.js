@@ -27,8 +27,8 @@ module.exports = {
 				roleId: 'R1',
 				delete: 0,
 				createdAt: new Date(),
-				updatedAt: new Date(),
-				deleteAt: new Date(),
+				updatedAt: null,
+				deleteAt: null,
 			},
 		]);
 	},

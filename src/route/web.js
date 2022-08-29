@@ -6,6 +6,10 @@ let route = express.Router();
 
 let initWebRoutes = (app) => {
 	route.get('/', homeController.getHomePage);
+	route.get('/home', homeController.getHomePage);
+	route.get('/homepage', homeController.getHomePage);
+
+	route.get('/crud', homeController.getCRUD);
 
 	//rest api(get,post, delete)
 	route.get('/example', (req, res) => {

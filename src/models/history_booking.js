@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
 			clientId: DataTypes.INTEGER,
 			celebId: DataTypes.INTEGER,
 			description: DataTypes.TEXT,
-			//file: DataTypes.BLOB,
+			file: DataTypes.TEXT,
 			delete: DataTypes.BOOLEAN,
 		},
 		{

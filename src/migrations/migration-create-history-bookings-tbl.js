@@ -17,9 +17,9 @@ module.exports = {
 			description: {
 				type: Sequelize.TEXT,
 			},
-			/* file: {
-				type: Sequelize.BLOB,
-			}, */
+			file: {
+				type: Sequelize.TEXT,
+			},
 			delete: {
 				type: Sequelize.BOOLEAN,
 			},
