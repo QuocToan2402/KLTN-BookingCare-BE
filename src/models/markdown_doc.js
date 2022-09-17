@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	Markdown_doc.init(
 		{
-			celebId: DataTypes.INTEGER,
-			companyId: DataTypes.INTEGER,
+			doctorId: DataTypes.INTEGER,
+			clinicId: DataTypes.INTEGER,
 			specialtyId: DataTypes.INTEGER,
 			contentHTML: DataTypes.TEXT,
 			contentMarkdown: DataTypes.TEXT,

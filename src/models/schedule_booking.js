@@ -14,9 +14,10 @@ module.exports = (sequelize, DataTypes) => {
 	Schedule_booking.init(
 		{
 			currentNumber: DataTypes.INTEGER,
+			maxNumber: DataTypes.INTEGER,
 			dateBooking: DataTypes.DATE,
-			time: DataTypes.STRING,
-			celebId: DataTypes.INTEGER,
+			timeType: DataTypes.STRING,
+			doctorId: DataTypes.INTEGER,
 			//delete: DataTypes.BOOLEAN,
 		},
 		{

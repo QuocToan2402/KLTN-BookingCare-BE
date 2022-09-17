@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
 	}
 	History_booking.init(
 		{
-			clientId: DataTypes.INTEGER,
-			celebId: DataTypes.INTEGER,
+			patientId: DataTypes.INTEGER,
+			doctorId: DataTypes.INTEGER,
 			description: DataTypes.TEXT,
 			file: DataTypes.TEXT,
 			delete: DataTypes.BOOLEAN,
