@@ -9,8 +9,10 @@ let initWebRoutes = (app) => {
 	route.get('/home', homeController.getHomePage);
 	route.get('/homepage', homeController.getHomePage);
 
+	//crud
 	route.get('/crud', homeController.getCRUD);
 	route.post('/post-crud', homeController.postCRUD);
+	route.get('/get-crud', homeController.displayCRUD);
 
 	//rest api(get,post, delete)
 	route.get('/example', (req, res) => {
