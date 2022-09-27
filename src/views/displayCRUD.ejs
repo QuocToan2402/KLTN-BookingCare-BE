@@ -22,22 +22,53 @@
 			tr:nth-child(even) {
 				background-color: #dddddd;
 			}
+			.btn-edit {
+				color: #0818a8;
+				font-weight: 500;
+				border-radius: 3px;
+				border: none;
+			}
+			.btn-delete {
+				color: #e71010;
+				font-weight: 500;
+				border-radius: 3px;
+				border: none;
+			}
 		</style>
 	</head>
 	<body>
 		<table>
 			<tr>
+				<th>ID</th>
 				<th>EMAIL</th>
 				<th>USERNAME</th>
 				<th>FIRSTNAME</th>
 				<th>LASTNAME</th>
+				<th>ACTION</th>
 			</tr>
 			<% for(var i=0; i < dataTable.length; i++) { %>
 			<tr>
+				<td><%= dataTable[i].id %></td>
 				<td><%= dataTable[i].email %></td>
 				<td><%= dataTable[i].username %></td>
 				<td><%= dataTable[i].firstName %></td>
 				<td><%= dataTable[i].lastName %></td>
+				<td>
+					<button
+						onclick="location.href='/edit-crud?id=<%= dataTable[i].id %>'"
+						class="btn-edit"
+						type="button"
+					>
+						EDIT
+					</button>
+					<button
+						onclick="location.href='/delete-user?id=<%= dataTable[i].id %>'"
+						class="btn-delete"
+						type="button"
+					>
+						DELETE
+					</button>
+				</td>
 			</tr>
 			<% } %>
 		</table>

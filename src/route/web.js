@@ -13,6 +13,9 @@ let initWebRoutes = (app) => {
 	route.get('/crud', homeController.getCRUD);
 	route.post('/post-crud', homeController.postCRUD);
 	route.get('/get-crud', homeController.displayCRUD);
+	route.get('/edit-crud', homeController.editCRUD);
+	route.post('/put-crud', homeController.putCRUD);
+	route.get('/delete-user', homeController.deleteCRUD);
 
 	//rest api(get,post, delete)
 	route.get('/example', (req, res) => {
