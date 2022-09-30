@@ -1,6 +1,7 @@
 //Moi lan truy cap link thi vao file nay dau tien
 import express from 'express';
 import homeController from '../controllers/homeController';
+import userController from '../controllers/userController';
 
 let route = express.Router();
 
@@ -16,6 +17,9 @@ let initWebRoutes = (app) => {
 	route.get('/edit-crud', homeController.editCRUD);
 	route.post('/put-crud', homeController.putCRUD);
 	route.get('/delete-user', homeController.deleteCRUD);
+
+	//Auth
+	route.get('/api/login', userController.handleLogin);
 
 	//rest api(get,post, delete)
 	route.get('/example', (req, res) => {
